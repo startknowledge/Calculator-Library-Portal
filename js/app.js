@@ -1,3 +1,5 @@
+let activeMenuItem = null;
+let activeSubmenuItem = null;
 // LOAD MAIN MENU
 const menuContainer = document.getElementById("menu");
 const submenuContainer = document.getElementById("submenu");
@@ -9,23 +11,44 @@ Object.keys(calculatorData).forEach(category => {
   menuItem.classList.add("menu-item");
   menuItem.innerHTML = category;
 
-  menuItem.onclick = () => loadSubmenu(category);
+  menuItem.onclick = () => {
+  // Remove old active menu
+  document.querySelectorAll(".menu-item")
+    .forEach(item => item.classList.remove("active"));
+
+  // Set new active
+  menuItem.classList.add("active");
+  activeMenuItem = category;
+
+  loadSubmenu(category);
+};
   menuContainer.appendChild(menuItem);
 });
 
 // LOAD SUBMENU
 function loadSubmenu(category) {
-  submenuContainer.innerHTML = ""; // clear previous submenu
+  submenuContainer.innerHTML = "";
 
   calculatorData[category].forEach(calc => {
     const item = document.createElement("div");
     item.classList.add("submenu-item");
     item.innerHTML = calc;
+    item.onclick = () => {
+      // Remove old active submenu
+      document.querySelectorAll(".submenu-item")
+        .forEach(i => i.classList.remove("active"));
 
-    item.onclick = () => loadCalculator(calc);
+      // Set active submenu
+      item.classList.add("active");
+      activeSubmenuItem = calc;
+
+      loadCalculator(calc);
+    };
+
     submenuContainer.appendChild(item);
   });
 }
+
 
 // LOAD CALCULATOR FORM
 function loadCalculator(name) {
