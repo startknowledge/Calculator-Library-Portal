@@ -1,6 +1,88 @@
+<!DOCTYPE html>
 <html>
-<title> This is my website </title>
-<h1>This is my beautiful website </h1>
-<p>Welcome, I hope you enjoy my website </p>
-<p> :) X) :D XD</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Library Portal - All Online Calculators</title>
+  <meta name="description" content="Explore 100+ online calculators including financial, health, scientific, tax, and more. Use our free Calculator Library Portal for accurate results.">
+  <meta name="keywords" content="online calculator, financial calculator, BMI calculator, tax calculator, SIP calculator, EMI calculator, pension calculator, math calculator, scientific calculator, conversion calculator">
+  <link rel="canonical" href="https://yourdomain.com/">
+  
+  <!-- Open Graph / Social Share -->
+  <meta property="og:title" content="Calculator Library Portal">
+  <meta property="og:description" content="Explore 100+ online calculators including financial, health, scientific, tax, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculator Library Portal">
+  <meta name="twitter:description" content="Explore 100+ online calculators including financial, health, scientific, tax, and more.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2162324894765763"
+     crossorigin="anonymous"></script>
+ 
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+</nav>
+<H1>CALCULATOR LIBRARY PORTAL</H1>
+<hr style="height: 4px; border: none; background: linear-gradient(to right, blue, yellow, green, red) ;">
+<hr style="border-top: 5px dotted orange;">
+<hr style="height: 4px; border: none; background: linear-gradient(to right, red, yellow, green);">
+<div class="container">
+  <aside class="sidebar" id="menu"></aside>
+  <!-- NEW WRAPPER -->
+  <div class="main-content">
+  <div class="submenu" id="submenu"></div>
+  <div class="result-area" id="resultArea">
+    <h2>Select any calculator</h2>
+    <h2>from left side</h2>
+  </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<!-- 
+project/
+│── index.html
+│── style.css
+│── js/
+│     ├── app.js   ← (main JS logic: menu, submenu, loader)
+│     ├── calculators/
+│     │       ├── addition.js
+│     │       ├── subtraction.js
+│     │       ├── multiplication.js
+│     │       ├── division.js
+│     │       ├── percentage.js
+│     │       ├── age.js
+│     │       ├── date-diff.js
+│     │       └── ...
+│     └── data.js  ← (all JSON calculator list)
+
+WHY app.js NEEDS TO BE A SEPARATE FILE?
+3 reasons:
+1. Aap 200 calculator add karoge → index.html heavy ho jayega Separate file rakhoge to project fast & clean rahega.
+2. JS code reusable hoga Menu & submenu logic alag → formula alag.
+3. Aap easily new calculators add kar paoge Sirf 1 file edit karna hoga: js/data.js
+⭐ AAP KA SAWAL → “KAHA LOAD HOGA?”
+✔️ index.html    – HTML layout     – JS load karne ke links
+✔️ style.css    – sab CSS
+✔️ js/data.js    – JSON calculator list   (isme add karte jao aur sab auto load)
+✔️ js/app.js     – logic: menu → submenu → load form
+✔️ js/calculators/*.js     – individual calculator formulas
+export default function () { ... input + button + formula ... }
+-->
+</body>
 </html>

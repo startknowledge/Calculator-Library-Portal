@@ -1,0 +1,379 @@
+{
+  "Basic / Simple Calculators": [
+    { "name": "Addition", "file": "js/calculators/addition.js" },
+    { "name": "Subtraction", "file": "js/calculators/subtraction.js" },
+    { "name": "Multiplication", "file": "js/calculators/multiplication.js" },
+    { "name": "Division", "file": "js/calculators/division.js" },
+    { "name": "Percentage", "file": "js/calculators/percentage.js" },
+    { "name": "Discount", "file": "js/calculators/discount.js" },
+    { "name": "Unit Length Converter", "file": "js/calculators/unit-length-converter.js" },
+    { "name": "Unit Weight Converter", "file": "js/calculators/unit-weight-converter.js" },
+    { "name": "Unit Temperature Converter", "file": "js/calculators/unit-temperature-converter.js" }
+  ],
+  "Age & Date Calculators": [
+    { "name": "Age Calculator", "file": "js/calculators/age-calculator.js" },
+    { "name": "Date Difference Calculator", "file": "js/calculators/date-difference-calculator.js" },
+    { "name": "Working Days Calculator", "file": "js/calculators/working-days-calculator.js" },
+    { "name": "Retirement Age Calculator", "file": "js/calculators/retirement-age-calculator.js" },
+    { "name": "Service Age Calculator", "file": "js/calculators/service-age-calculator.js" },
+    { "name": "Leave Days Calculator", "file": "js/calculators/leave-days-calculator.js" }
+  ],
+  "Savings & Interest Calculators": [
+  { "name": "Simple Interest Calculator", "file": "js/calculators/simple-interest-calculator.js" },
+  { "name": "Compound Interest Calculator", "file": "js/calculators/compound-interest-calculator.js" },
+  { "name": "Fixed Deposit (FD) Calculator", "file": "js/calculators/fd-calculator.js" },
+  { "name": "Recurring Deposit (RD) Calculator", "file": "js/calculators/rd-calculator.js" },
+  { "name": "Public Provident Fund (PPF) Calculator", "file": "js/calculators/ppf-calculator.js" }
+  ],
+  "Financial Calculators": [
+  { "name": "SIP Calculator", "file": "js/calculators/sip-calculator.js" },
+  { "name": "SWP Calculator", "file": "js/calculators/swp-calculator.js" },
+  { "name": "Lumpsum Calculator", "file": "js/calculators/lumpsum-calculator.js" },
+  { "name": "Mutual Fund Returns Calculator", "file": "js/calculators/mutual-fund-returns-calculator.js" },
+  { "name": "Stock Return Calculator", "file": "js/calculators/stock-return-calculator.js" },
+  { "name": "CAGR Calculator", "file": "js/calculators/cagr-calculator.js" },
+  { "name": "Inflation Calculator", "file": "js/calculators/inflation-calculator.js" }
+  ],
+  "Loan Calculators": [
+  { "name": "EMI Calculator", "file": "js/calculators/emi-calculator.js" },
+  { "name": "Student Loan EMI Calculator", "file": "js/calculators/student-loan-emi-calculator.js" },
+  { "name": "Home Loan EMI Calculator", "file": "js/calculators/home-loan-emi-calculator.js" },
+  { "name": "Personal Loan EMI Calculator", "file": "js/calculators/personal-loan-emi-calculator.js" },
+  { "name": "Car Loan EMI Calculator", "file": "js/calculators/car-loan-emi-calculator.js" },
+  { "name": "Education Loan EMI Calculator", "file": "js/calculators/education-loan-emi-calculator.js" },
+  { "name": "Reducing Balance EMI Calculator", "file": "js/calculators/reducing-balance-emi-calculator.js" },
+  { "name": "Vehicle Loan EMI Calculator", "file": "js/calculators/vehicle-loan-emi-calculator.js" }
+  ],
+  "Bank & Finance Internal Calculators": [
+  { "name": "CASA Ratio Calculator", "file": "js/calculators/casa-ratio-calculator.js" },
+  { "name": "NPA Percentage Calculator", "file": "js/calculators/npa-percentage-calculator.js"},
+  { "name": "Loan Recovery Percentage", "file": "js/calculators/loan-recovery-percentage.js" },
+  { "name": "Bank Branch Profitability Calculator", "file": "js/calculators/bank-branch-profitability-calculator.js" }
+  ],
+  "Insurance Calculators": [
+  { "name": "Term Insurance Premium Calculator", "file": "js/calculators/term-insurance-premium-calculator.js" },
+  { "name": "Health Insurance Premium Calculator", "file": "js/calculators/health-insurance-premium-calculator.js" },
+  { "name": "Life Cover Requirement Calculator", "file": "js/calculators/life-cover-requirement-calculator.js" },
+  { "name": "Car Insurance IDV Calculator", "file": "js/calculators/car-insurance-idv-calculator.js" },
+  { "name": "Motor Insurance Calculator", "file": "js/calculators/motor-insurance-calculator.js" },
+  { "name": "Insurance Coverage Calculator", "file": "js/calculators/insurance-coverage-calculator.js" }
+  ],
+  "Insurance Agent Tools": [
+  { "name": "Commission Earnings Calculator", "file": "js/calculators/commission-earnings-calculator.js"},
+  { "name": "Renewal Income Calculator", "file": "js/calculators/renewal-income-calculator.js"},
+  { "name": "LIC Bonus Estimator", "file": "js/calculators/lic-bonus-estimator.js" },
+  { "name": "Claim Settlement Calculator", "file": "js/calculators/claim-settlement-calculator.js" }
+  ],
+  "Tax Calculators": [
+  { "name": "Income Tax Calculator", "file": "js/calculators/income-tax-calculator.js" },
+  { "name": "GST Calculator", "file": "js/calculators/gst-calculator.js" },
+  { "name": "Capital Gains Tax Calculator", "file": "js/calculators/capital-gains-tax-calculator.js" },
+  { "name": "TDS Calculator", "file": "js/calculators/tds-calculator.js" },
+  { "name": "Professional Tax Calculator", "file": "js/calculators/professional-tax-calculator.js" },
+  { "name": "GST Interest Calculator", "file": "js/calculators/gst-interest-calculator.js" },
+  { "name": "Late Filing Penalty Calculator", "file": "js/calculators/late-filing-penalty-calculator.js" },
+  { "name": "TDS Deduction Calculator", "file": "js/calculators/tds-deduction-calculator.js" }
+  ],
+  "Military & Defence Calculators": [
+  { "name": "Service Duration Calculator", "file": "js/calculators/service-duration-calculator.js" },
+  { "name": "Ration Scale Calculator", "file": "js/calculators/ration-scale-calculator.js" }
+  ],
+  "Judicial & Court Calculators": [
+  { "name": "Bail Amount Calculator", "file": "js/calculators/bail-amount-calculator.js" },
+  { "name": "Case Duration Estimator", "file": "js/calculators/case-duration-estimator.js" },
+  { "name": "Legal Compensation Calculator", "file": "js/calculators/legal-compensation-calculator.js" },
+  { "name": "Cheque Bounce Penalty Calculator", "file": "js/calculators/cheque-bounce-penalty-calculator.js" }
+  ],
+  "Government Scheme & Yojana Tools 🇮🇳": [
+  { "name": "PM Awas Yojana Eligibility Calculator", "file": "js/calculators/pm-awas-yojana-eligibility-calculator.js" },
+  { "name": "PM Ujjwala Subsidy Calculator", "file": "js/calculators/pm-ujjwala-subsidy-calculator.js" },
+  { "name": "PMAY EMI Calculator", "file": "js/calculators/pmay-emi-calculator.js" },
+  { "name": "E-Shram Card Benefit Estimator", "file": "js/calculators/e-shram-card-benefit-estimator.js" }
+  ],
+  "Construction Labour Tools🏗️": [
+  { "name": "Labour Cost Estimator", "file": "js/calculators/labour-cost-estimator.js" },
+  { "name": "Daily Wage Distribution Calculator", "file": "js/calculators/daily-wage-distribution-calculator.js" },
+  { "name": "Contractor Profit/Loss Estimator", "file": "js/calculators/contractor-profit-loss-estimator.js" },
+  { "name": "Site Material Loss Calculator", "file": "js/calculators/site-material-loss-calculator.js" }
+  ],
+  "Scientific Calculators": [
+  { "name": "Scientific Calculator", "file": "js/calculators/scientific-calculator.js" },
+  { "name": "Matrix Calculator", "file": "js/calculators/matrix-calculator.js" },
+  { "name": "Complex Number Calculator", "file": "js/calculators/complex-number-calculator.js" },
+  { "name": "Trigonometry Calculator", "file": "js/calculators/trigonometry-calculator.js" },
+  { "name": "Logarithm Exponent Calculator", "file": "js/calculators/logarithm-exponent-calculator.js" },
+  { "name": "Algebra Solver", "file": "js/calculators/algebra-solver.js" },
+  { "name": "Equation Solver", "file": "js/calculators/equation-solver.js" },
+  { "name": "Fraction Calculator", "file": "js/calculators/fraction-calculator.js" },
+  { "name": "Derivative Integration Calculator", "file": "js/calculators/derivative-integration-calculator.js" },
+  { "name": "Logarithm Calculator", "file": "js/calculators/logarithm-calculator.js" },
+  { "name": "Quadratic Equation Solver", "file": "js/calculators/quadratic-equation-solver.js" },
+  { "name": "Statistics Calculator", "file": "js/calculators/statistics-calculator.js" },
+  { "name": "Probability Calculator", "file": "js/calculators/probability-calculator.js" }
+  ],
+  "Health & Fitness Calculators": [
+  { "name": "BMI Calculator", "file": "js/calculators/bmi-calculator.js" },
+  { "name": "BMR Calculator", "file": "js/calculators/bmr-calculator.js" },
+  { "name": "Calorie Intake Calculator", "file": "js/calculators/calorie-intake-calculator.js" },
+  { "name": "Calorie Requirement Calculator", "file": "js/calculators/calorie-requirement-calculator.js" },
+  { "name": "Water Intake Calculator", "file": "js/calculators/water-intake-calculator.js" },
+  { "name": "Heart Rate Calculator", "file": "js/calculators/heart-rate-calculator.js" },
+  { "name": "Ideal Weight Calculator", "file": "js/calculators/ideal-weight-calculator.js" },
+  { "name": "Pregnancy Due Date Calculator", "file": "js/calculators/pregnancy-due-date-calculator.js" },
+  { "name": "Body Fat Percentage Calculator", "file": "js/calculators/body-fat-percentage-calculator.js" }
+  ],
+  "Household Calculators": [
+  { "name": "Camera Storage Calculator", "file": "js/calculators/camera-storage-calculator.js" },
+  { "name": "Water Bill Calculator", "file": "js/calculators/water-bill-calculator.js" },
+  { "name": "LPG Gas Consumption Calculator", "file": "js/calculators/lpg-gas-consumption-calculator.js" },
+  { "name": "House Rent Sharing Calculator", "file": "js/calculators/house-rent-sharing-calculator.js" },
+  { "name": "Grocery Budget Calculator", "file": "js/calculators/grocery-budget-calculator.js" }
+  ],
+  "Electrical & Electronics Calculators": [   
+  { "name": "Power Consumption Calculator", "file": "js/calculators/power-consumption-calculator.js" },
+  { "name": "Inverter Backup Calculator", "file": "js/calculators/inverter-backup-calculator.js" },
+  { "name": "Solar Panel Output Calculator", "file": "js/calculators/solar-panel-output-calculator.js" },
+  { "name": "Solar Panel Requirement Calculator", "file": "js/calculators/solar-panel-requirement-calculator.js" },
+  { "name": "Voltage Drop Calculator", "file": "js/calculators/voltage-drop-calculator.js" },
+  { "name": "Ohms Law Calculator", "file": "js/calculators/ohms-law-calculator.js" },
+  { "name": "Resistor Color Code Calculator", "file": "js/calculators/resistor-color-code-calculator.js" }
+  ],
+  "Electricity & Power Calculators": [
+  { "name": "Electricity Load Calculator", "file": "js/calculators/electricity-load-calculator.js" },
+  { "name": "Electricity Bill Calculator", "file": "js/calculators/electricity-bill-calculator.js" },
+  { "name": "Battery Capacity Calculator", "file": "js/calculators/battery-capacity-calculator.js" },
+  { "name": "Inverter Load Calculator", "file": "js/calculators/inverter-load-calculator.js" },
+  { "name": "UPS Backup Time Calculator", "file": "js/calculators/ups-backup-time-calculator.js" }
+  ],
+  "EV (Electric Vehicle) Calculators": [
+  { "name": "EV Charging Cost Calculator", "file": "js/calculators/ev-charging-cost-calculator.js" },
+  { "name": "EV Battery Range Calculator", "file": "js/calculators/ev-battery-range-calculator.js" },
+  { "name": "EV Charging Time Calculator", "file": "js/calculators/ev-charging-time-calculator.js" },
+  { "name": "EV vs Petrol Cost Comparison", "file": "js/calculators/ev-vs-petrol-cost-comparison.js" }
+  ],
+  "Education / Academic Calculators": [
+  { "name": "GPA Calculator", "file": "js/calculators/gpa-calculator.js" },
+  { "name": "CGPA to Percentage Converter", "file": "js/calculators/cgpa-to-percentage-converter.js" },
+  { "name": "Percentage to CGPA Converter", "file": "js/calculators/percentage-to-cgpa-converter.js" },
+  { "name": "Marks Percentage Calculator", "file": "js/calculators/marks-percentage-calculator.js" },
+  { "name": "Exam Rank Predictor", "file": "js/calculators/exam-rank-predictor.js" },
+  { "name": "Admission Cutoff Calculator", "file": "js/calculators/admission-cutoff-calculator.js" },
+  { "name": "Attendance Percentage Calculator", "file": "js/calculators/attendance-percentage-calculator.js" },
+  { "name": "Scholarship Eligibility Calculator", "file": "js/calculators/scholarship-eligibility-calculator.js" }
+  ],
+  "Construction / Engineering Calculators": [
+  { "name": "Cement Calculator", "file": "js/calculators/cement-calculator.js" },
+  { "name": "Concrete Calculator", "file": "js/calculators/concrete-calculator.js" },
+  { "name": "Steel Weight Calculator", "file": "js/calculators/steel-weight-calculator.js" },
+  { "name": "Paint Calculator", "file": "js/calculators/paint-calculator.js" },
+  { "name": "Area Volume Calculator", "file": "js/calculators/area-volume-calculator.js" }
+  ],
+  "Business Calculators": [
+  { "name": "Profit Loss Margin Calculator", "file": "js/calculators/profit-loss-margin-calculator.js" },
+  { "name": "ROI Calculator", "file": "js/calculators/roi-calculator.js" },
+  { "name": "Break even Calculator", "file": "js/calculators/break-even-calculator.js" },
+  { "name": "Business Valuation Calculator", "file": "js/calculators/business-valuation-calculator.js" },
+  { "name": "Franchise Investment Calculator", "file": "js/calculators/franchise-investment-calculator.js" },
+  { "name": "Markup Calculator", "file": "js/calculators/markup-calculator.js" },
+  { "name": "Reseller Profit Loss Calculator", "file": "js/calculators/reseller-profit-loss-calculator.js" },
+  { "name": "Commission Calculator", "file": "js/calculators/commission-calculator.js" },
+  { "name": "Startup Valuation Calculator", "file": "js/calculators/startup-valuation-calculator.js" },
+  { "name": "Inventory Turnover Calculator", "file": "js/calculators/inventory-turnover-calculator.js" },
+  { "name": "Working Capital Calculator", "file": "js/calculators/working-capital-calculator.js" },
+  { "name": "Cash Flow Calculator", "file": "js/calculators/cash-flow-calculator.js" },
+  { "name": "Expense Ratio Calculator", "file": "js/calculators/expense-ratio-calculator.js" },
+  { "name": "Revenue Growth Calculator", "file": "js/calculators/revenue-growth-calculator.js" },
+  { "name": "Customer Acquisition Cost Calculator", "file": "js/calculators/customer-acquisition-cost-calculator.js" },
+  { "name": "Lifetime Value Calculator", "file": "js/calculators/lifetime-value-calculator.js" },
+  { "name": "Payroll Calculator", "file": "js/calculators/payroll-calculator.js" },
+  { "name": "Overhead Cost Calculator", "file": "js/calculators/overhead-cost-calculator.js" },
+  { "name": "Sales Conversion Rate Calculator", "file": "js/calculators/sales-conversion-rate-calculator.js" },
+  { "name": "Economic Order Quantity Calculator", "file": "js/calculators/economic-order-quantity-calculator.js" },
+  { "name": "Depreciation Calculator", "file": "js/calculators/depreciation-calculator.js" },
+  { "name": "Budget Variance Calculator", "file": "js/calculators/budget-variance-calculator.js" },
+  { "name": "Delivery Cost Calculator", "file": "js/calculators/delivery-cost-calculator.js" }
+  ],
+  "Online Business & Freelancing": [
+    { "name": "Freelance Earnings Calculator", "file": "js/calculators/freelance-earnings-calculator.js" },
+    { "name": "Website Hosting Cost Calculator", "file": "js/calculators/website-hosting-cost-calculator.js" },
+    { "name": "Domain Cost Calculator", "file": "js/calculators/domain-cost-calculator.js" },
+    { "name": "App Development Cost Calculator", "file": "js/calculators/app-development-cost-calculator.js" },
+    { "name": "Amazon Seller Profit Calculator", "file": "js/calculators/amazon-seller-profit-calculator.js" },
+    { "name": "Dropshipping Profit Calculator", "file": "js/calculators/dropshipping-profit-calculator.js" }
+  ],
+  "Real Estate Calculators": [
+  { "name": "Property Appreciation Calculator", "file": "js/calculators/property-appreciation-calculator.js" },
+  { "name": "Capital Appreciation Calculator", "file": "js/calculators/capital-appreciation-calculator.js" },
+  { "name": "Rental vs Sell Decision calculator", "file": "js/calculators/rental-vs-sell-decision-calculator.js" },
+  { "name": "Rental vs Buy Calculator", "file": "js/calculators/rental-vs-buy-decision-calculator.js" },
+  { "name": "Floor Area Ratio Calculator", "file": "js/calculators/floor-area-ratio-calculator.js" },
+  { "name": "Property EMI Calculator", "file": "js/calculators/property-emi-calculator.js" },
+  { "name": "Registry Stamp Duty Calculator", "file": "js/calculators/registry-stamp-duty-calculator.js" },
+  { "name": "Rental Yield Calculator", "file": "js/calculators/rental-yield-calculator.js" },
+  { "name": "Land Area Converter", "file": "js/calculators/land-area-converter.js" },
+  { "name": "Real Estate Capital Gain Calculator", "file": "js/calculators/real-estate-capital-gain-calculator.js" }
+  ],
+  "Mortgage & Home Buying Calculators": [
+    { "name": "Home Affordability Calculator", "file": "js/calculators/home-affordability-calculator.js" },
+    { "name": "Mortgage Payment Calculator", "file": "js/calculators/mortgage-payment-calculator.js" },        
+    { "name": "Home Insurance Calculator", "file": "js/calculators/home-insurance-calculator.js" }
+  ],
+  "Interior Design & Home Improvement": [
+    { "name": "Paint Cost Calculator", "file": "js/calculators/paint-cost-calculator.js" },
+    { "name": "Flooring Cost Calculator", "file": "js/calculators/flooring-cost-calculator.js" },
+    { "name": "Furniture Cost Estimator", "file": "js/calculators/furniture-cost-estimator.js" },
+    { "name": "Renovation Cost Calculator", "file": "js/calculators/renovation-cost-calculator.js" },
+    { "name": "Lighting Cost Calculator", "file": "js/calculators/lighting-cost-calculator.js" }
+  ],  
+  "Clothing & Garment Industry": [
+    { "name": "Stitching Cost Estimator", "file": "js/calculators/stitching-cost-estimator.js" },
+    { "name": "Clothing Inventory Calculator", "file": "js/calculators/clothing-inventory-calculator.js" },
+    { "name": "Size Conversion Chart", "file": "js/calculators/size-conversion-chart.js" },
+    { "name": "Laundry Cost Calculator", "file": "js/calculators/laundry-cost-calculator.js" },
+    { "name": "Tailoring Measurement Calculator", "file": "js/calculators/tailoring-measurement-calculator.js" },
+    { "name": "Garment Dyeing Cost Estimator", "file": "js/calculators/garment-dyeing-cost-estimator.js" }, 
+    { "name": "Fabric Weight Calculator", "file": "js/calculators/fabric-weight-calculator.js" },
+    { "name": "Fabric Shrinkage Calculator", "file": "js/calculators/fabric-shrinkage-calculator.js" },
+    { "name": "Garment Packaging Cost Estimator", "file": "js/calculators/garment-packaging-cost-estimator.js" }, 
+    { "name": "Clothing Brand Valuation Calculator", "file": "js/calculators/clothing-brand-valuation-calculator.js" },  
+    { "name": "Fabric Cost per Yard Calculator", "file": "js/calculators/fabric-cost-per-yard-calculator.js" } 
+  ],
+   "Agriculture & Farming Calculators": [
+    { "name": "Fertilizer Dosage Calculator", "file": "js/calculators/fertilizer-dosage-calculator.js" },
+    { "name": "Pesticide Requirement Calculator", "file": "js/calculators/pesticide-requirement-calculator.js" },
+    { "name": "Irrigation Water Requirement Calculator", "file": "js/calculators/irrigation-water-requirement-calculator.js" },
+    { "name": "Crop Yield Calculator", "file": "js/calculators/crop-yield-calculator.js" },
+    { "name": "Seed Rate Calculator", "file": "js/calculators/seed-rate-calculator.js" },
+    { "name": "Tractor Fuel Consumption Calculator", "file": "js/calculators/tractor-fuel-consumption-calculator.js" }
+ ],
+  "Civil Engineering Calculators": [
+    { "name": "Cement Quantity Calculator", "file": "js/calculators/cement-quantity-calculator.js" },
+    { "name": "Bricks Calculator", "file": "js/calculators/bricks-calculator.js" },
+    { "name": "RCC Slab Calculator", "file": "js/calculators/rcc-slab-calculator.js" },
+    { "name": "Load Bearing Calculator", "file": "js/calculators/load-bearing-calculator.js" },
+    { "name": "Floor Area Ratio Calculator", "file": "js/calculators/floor-area-ratio-calculator.js" }
+  ],
+  "Mechanical Engineering Calculators": [
+    { "name": "Beam Deflection Calculator", "file": "js/calculators/beam-deflection-calculator.js" },
+    { "name": "Gear Ratio Calculator", "file": "js/calculators/gear-ratio-calculator.js" },
+    { "name": "Thermodynamics Calculator", "file": "js/calculators/thermodynamics-calculator.js" },
+    { "name": "Fluid Mechanics Calculator", "file": "js/calculators/fluid-mechanics-calculator.js" }
+  ],
+  "Chemical Engineering Calculators": [
+    { "name": "Reactor Volume Calculator", "file": "js/calculators/reactor-volume-calculator.js" },
+    { "name": "Mixing Time Calculator", "file": "js/calculators/mixing-time-calculator.js" },
+    { "name": "Heat Exchanger Calculator", "file": "js/calculators/heat-exchanger-calculator.js" },
+    { "name": "Distillation Column Calculator", "file": "js/calculators/distillation-column-calculator.js" }
+  ],
+  "Mobile Telecom Online Tools Utility Calculators": [
+    { "name": "Mobile Recharge Plan Savings Calculator", "file": "js/calculators/mobile-recharge-plan-savings-calculator.js" },
+    { "name": "SMS Voice Usage Calculator", "file": "js/calculators/sms-voice-usage-calculator.js" },
+    { "name": "Internet Data Usage Calculator", "file": "js/calculators/internet-data-usage-calculator.js" },
+    { "name": "Website Bandwidth Calculator", "file": "js/calculators/website-bandwidth-calculator.js" },
+    { "name": "Server Load Calculator", "file": "js/calculators/server-load-calculator.js" },
+    { "name": "Coding Project Cost Calculator", "file": "js/calculators/coding-project-cost-calculator.js" },
+    { "name": "Software License Cost Calculator", "file": "js/calculators/software-license-cost-calculator.js" },
+    { "name": "Cloud Hosting Calculator", "file": "js/calculators/cloud-hosting-calculator.js" },
+    { "name": "IP Subnet Calculator", "file": "js/calculators/ip-subnet-calculator.js" },
+    { "name": "File Size Calculator", "file": "js/calculators/file-size-calculator.js" },
+    { "name": "SSL Expiry Calculator", "file": "js/calculators/ssl-expiry-calculator.js" }    
+  ],
+  "IT Programming Calculators": [
+    { "name": "Time Complexity Calculator", "file": "js/calculators/time-complexity-calculator.js" },
+    { "name": "'Big-O' Notation Calculator", "file": "js/calculators/big-o-notation-calculator.js" },
+    { "name": "Decimal to Binary and Hex Converter", "file": "js/calculators/decimal-to-binary-and-hex-converter.js" },
+    { "name": "Binary to Decimal and Hex Converter", "file": "js/calculators/binary-to-decimal-and-hex-converter.js" },
+    { "name": "Hex to Binary and Decimal Converter", "file": "js/calculators/hex-to-binary-and-decimal-converter.js" },
+    { "name": "API Rate Limit Calculator", "file": "js/calculators/api-rate-limit-calculator.js" },
+    { "name": "Server Downtime Cost Calculator", "file": "js/calculators/server-downtime-cost-calculator.js" }
+
+  ],
+  "SaaS PaaS IaaS Tools": [
+    { "name": "SaaS Pricing Calculator", "file": "js/calculators/saas-pricing-calculator.js" },
+    { "name": "PaaS Pricing Calculator", "file": "js/calculators/paas-pricing-calculator.js" },
+    { "name": "IaaS Pricing Calculator", "file": "js/calculators/iaas-pricing-calculator.js" },
+    { "name": "Monthly Recurring Revenue Calculator", "file": "js/calculators/monthly-recurring-revenue-calculator.js" },
+    { "name": "Customer Acquisition Cost Calculator", "file": "js/calculators/customer-acquisition-cost-calculator.js" },
+    { "name": "Lifetime Value LTV Calculator", "file": "js/calculators/lifetime-value-ltv-calculator.js" }
+
+  ],
+  "Jewellery Gold Business": [
+    { "name": "Gold Making Charges Calculator", "file": "js/calculators/gold-making-charges-calculator.js" },
+    { "name": "Hallmark Purity Calculator", "file": "js/calculators/hallmark-purity-calculator.js" },
+    { "name": "Jewellery Profit Margin Calculator", "file": "js/calculators/jewellery-profit-margin-calculator.js" },
+    { "name": "Karat Conversion Tool", "file": "js/calculators/karat-conversion-tool.js" }
+  ],
+  "Aviation Calculators": [
+     { "name": "Aircraft Fuel Requirement Calculator", "file": "js/calculators/aircraft-fuel-requirement-calculator.js" },
+     { "name": "Range Calculator", "file": "js/calculators/range-calculator.js" },
+     { "name": "Climb Rate Calculator", "file": "js/calculators/climb-rate-calculator.js" },
+     { "name": "Descent Rate Calculator", "file": "js/calculators/descent-rate-calculator.js" },
+     { "name": "Payload Calculator", "file": "js/calculators/payload-calculator.js" },
+     { "name": "Endurance Calculator", "file": "js/calculators/endurance-calculator.js" },
+     { "name": "Glide Ratio Calculator", "file": "js/calculators/glide-ratio-calculator.js" },
+     { "name": "Lift to Drag Ratio Calculator", "file": "js/calculators/lift-to-drag-ratio-calculator.js" },
+     { "name": "Mach Speed Calculator", "file": "js/calculators/mach-speed-calculator.js" },
+     { "name": "True Airspeed Calculator", "file": "js/calculators/true-airspeed-calculator.js" },
+     { "name": "Ground Speed Calculator", "file": "js/calculators/ground-speed-calculator.js" },
+     { "name": "Rate of Climb Calculator", "file": "js/calculators/rate-of-climb-calculator.js" },
+     { "name": "Rate of Descent Calculator", "file": "js/calculators/rate-of-descent-calculator.js" },
+     { "name": "Takeoff Speed Calculator", "file": "js/calculators/takeoff-speed-calculator.js" },
+     { "name": "Weight Balance Calculator", "file": "js/calculators/weight-balance-calculator.js" },
+     { "name": "Flight Time Calculator", "file": "js/calculators/flight-time-calculator.js" },
+     { "name": "Runway Length Calculator", "file": "js/calculators/runway-length-calculator.js" }
+  ],
+  "Space Physics Fun Calculators": [
+  { "name": "Rocket Fuel Requirement Calculator", "file": "js/calculators/rocket-fuel-requirement-calculator.js" },
+  { "name": "Orbit Time Calculator", "file": "js/calculators/orbit-time-calculator.js" },
+  { "name": "Escape Velocity Calculator", "file": "js/calculators/escape-velocity-calculator.js" },
+  { "name": "Gravity Force Calculator", "file": "js/calculators/gravity-force-calculator.js" },
+  { "name": "Time Dilation Calculator", "file": "js/calculators/time-dilation-calculator.js" }
+  ],
+  "Time Zone Converter": [
+    { "name": "Time Zone Converter", "file": "js/calculators/time-zone-converter.js" },
+    { "name": "World Clock Calculator", "file": "js/calculators/world-clock-calculator.js" },
+    { "name": "International Meeting Planner", "file": "js/calculators/international-meeting-planner.js" },
+    { "name": "Date to Day Converter", "file": "js/calculators/date-to-day-converter.js" },
+    { "name": "Day to Date Converter", "file": "js/calculators/day-to-date-converter.js" },
+    { "name": "Julian Date Converter", "file": "js/calculators/julian-date-converter.js" },
+    { "name": "Unix Timestamp Converter", "file": "js/calculators/unix-timestamp-converter.js" },
+    { "name": "Epoch Time Converter", "file": "js/calculators/epoch-time-converter.js" },
+    { "name": "GMT to Local Time Converter", "file": "js/calculators/gmt-to-local-time-converter.js" },
+    { "name": "Local Time to GMT Converter", "file": "js/calculators/local-time-to-gmt-converter.js" },
+    { "name": "Time Duration Calculator", "file": "js/calculators/time-duration-calculator.js" }
+  ],  
+  "Degree Converter": [
+    { "name": "Degree to Radian and Gradient Converter", "file": "js/calculators/degree-to-radian-and-gradient-converter.js" },
+    { "name": "Radian to Degree and Gradient Converter", "file": "js/calculators/radian-to-degree-and-gradient-converter.js" },
+    { "name": "Gradient to Degree and Radian Converter", "file": "js/calculators/gradient-to-degree-and-radian-converter.js" },
+    { "name": "Degree to Minutes and Second Converter", "file": "js/calculators/Degree-to-Minutes-and-Second-Converter.js" }
+  ],
+  "Environment Green Calculators": [
+    { "name": "Carbon Footprint Calculator", "file": "js/calculators/carbon-footprint-calculator.js" },
+    { "name": "Water Footprint Calculator", "file": "js/calculators/water-footprint-calculator.js" },
+    { "name": "Rainwater Harvesting Calculator", "file": "js/calculators/rainwater-harvesting-calculator.js" },
+    { "name": "Tree Oxygen Calculator", "file": "js/calculators/tree-oxygen-calculator.js" },
+    { "name": "Plastic Footprint Calculator", "file": "js/calculators/plastic-footprint-calculator.js" },
+    { "name": "Waste Generation Calculator", "file": "js/calculators/waste-generation-calculator.js" }
+  ],
+  "Smart City Infrastructure Calculators": [
+    { "name": "Water Consumption per Sector Calculator", "file": "js/calculators/water-consumption-per-sector-calculator.js" },
+    { "name": "Traffic Load Calculator", "file": "js/calculators/traffic-load-calculator.js" },
+    { "name": "Streetlight Energy Use Calculator", "file": "js/calculators/streetlight-energy-use-calculator.js" },
+    { "name": "Urban Population Density Calculator", "file": "js/calculators/urban-population-density-calculator.js" }
+  ],
+  
+  "Risk & Safety Calculators": [
+    { "name": "Fire Load Calculator", "file": "js/calculators/fire-load-calculator.js" },
+    { "name": "Safety Factor Calculator", "file": "js/calculators/safety-factor-calculator.js" },
+    { "name": "Risk Exposure Calculator", "file": "js/calculators/risk-exposure-calculator.js" },
+    { "name": "Workplace Accident Probability Calculator", "file": "js/calculators/workplace-accident-probability-calculator.js" }
+  ],
+  "Miscellaneous Calculators": [
+    { "name": "Leap Year Checker", "file": "js/calculators/leap-year-checker.js" },
+    { "name": "Numerology Calculator", "file": "js/calculators/numerology-calculator.js" },
+    { "name": "Body Surface Area Calculator", "file": "js/calculators/body-surface-area-calculator.js" },
+    { "name": "Dosage Calculator", "file": "js/calculators/dosage-calculator.js" }
+  ]
+  
+}
