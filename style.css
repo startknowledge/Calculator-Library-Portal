@@ -149,6 +149,32 @@ H1{
   color: #004e92;
   text-align: center;
 }
+/* ===== ACTIVE MENU (CATEGORY) ===== */
+.menu-item.active {
+  background: #9cd4da;
+  color: #07607d;
+  font-weight: bold;
+  border-left: 12px solid yellow;
+}
+
+/* ===== ACTIVE SUBMENU (CALCULATOR) ===== */
+.submenu-item.active {
+  background: #43a047;   /* Green */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(67,160,71,0.7);
+  position: relative;
+}
+
+/* ✔ CHECK MARK */
+.submenu-item.active::after {
+  content: " ✔";
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 16px;
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .container {
@@ -170,3 +196,4 @@ H1{
   text-align: left;
   padding: 10px;
 }
+
