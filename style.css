@@ -35,7 +35,7 @@ H1{
 }
 .container {
   display: flex;
-  height: 130vh;
+  height: 140vh;
 }
 /* ===== MAIN CONTENT (SUBMENU + RESULT) ===== */
 .main-content {
@@ -209,6 +209,7 @@ H1{
   text-align: left;
   padding: 10px;
 }
+
 
 
 
