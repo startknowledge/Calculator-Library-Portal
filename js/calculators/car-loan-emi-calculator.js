@@ -18,7 +18,26 @@ export default function () {
     </div>
 
     <button onclick="calculateLoanEMI()">Calculate</button>
-    <p id="loanResult"></p>
+    <p id="loanResult"></p><br>
+    <p><u>Explanation about Car Loan EMI Calculation</u> :</p>
+    <p>EMI (Equated Monthly Installment) is the fixed payment amount made by a borrower to a lender at a specified date each calendar month. It is used to pay off both interest and principal each month so that over a specified number of years, the loan is paid off in full.</p>
+    <p>The formula to calculate EMI is:</p>
+    <p>EMI = [P x R x (1+R)^N]/[(1+R)^N-1]</p>
+    <p><u>Where,</u> </p>
+    <ul>
+      <li>P = Principal Loan Amount</li>
+      <li>R = Monthly Interest Rate (Annual Rate / 12)</li>
+      <li>N = Number of Monthly Installments (Loan Tenure in Years × 12)</li>
+    </ul>
+    <p>This formula takes into account the principal amount, the interest rate, and the loan tenure to calculate the fixed monthly payment required to repay the loan in full over the specified period.</p>
+      const loanAmount = div.querySelector("#loanAmount");
+      const loanRate = div.querySelector("#loanRate");
+      const loanYears = div.querySelector("#loanYears");
+      const loanResult = div.querySelector("#loanResult");
+    <p>Different lenders may have varying interest rates and terms, so it's advisable to compare offers before finalizing a car loan.</p>
+    <p>Disclaimer: This calculator provides an estimate and should not be considered as financial advice. For precise calculations and personalized advice, please consult a financial advisor or lender.</p>
+    <br>
+
   `;
 
   window.calculateLoanEMI = function () {

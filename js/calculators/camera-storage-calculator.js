@@ -47,7 +47,17 @@ export default function () {
       * Approximation based on calculators by  
       <b>Western Digital</b>, <b>Seagate</b>, <b>Hikvision</b>
     </small>
-    
+    <br>
+    <p><u>Explanation about Camera Storage Calculation</u> :</p>
+    <p>Calculating the storage requirements for a camera system is crucial for ensuring adequate space for video recordings. The required storage depends on several factors, including the number of cameras, their resolution, frame rate, recording duration, and compression settings.</p>
+    <p>The formula to calculate the required storage involves determining the bitrate per camera and then multiplying it by the number of cameras and the recording duration.</p>
+    <p>For example, if a system has 4 cameras with 1080p resolution at 25 FPS, recording continuously for 30 days, with H.265 compression and a recording mode of continuous (24×7), the storage would be calculated as follows:</p>
+    <p>Bitrate per camera = 1080p × 25 FPS × 0.07 × H.265 compression factor = approximately 1.75 Mbps</p>
+    <p>Total Bitrate = 1.75 Mbps × 4 cameras × 1 (continuous) = 7 Mbps</p>
+    <p>Storage Required = (7 Mbps × 3600 seconds/hour × 24 hours/day × 30 days) / (8 bits/byte × 1024 MB/GB) ≈ 199 GB</p>
+    <p>This means approximately 199 GB of storage is needed for this configuration.</p>
+    <br>
+
   `;
 
   window.calcStorage = function () {

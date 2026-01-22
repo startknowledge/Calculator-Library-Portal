@@ -9,7 +9,14 @@ export default function () {
     <input type="date" id="caseEnd">
 
     <button onclick="calcCaseDuration()">Calculate</button>
-    <p id="caseResult"></p>
+    <p id="caseResult"></p><br>
+    <p><u>Explanation about Case Duration Estimator</u> :</p>
+    <p>This calculator estimates the duration of a case based on the start and end dates provided. It calculates the number of days between these two dates, inclusive of both start and end dates.</p>
+    <p>For example, if a case starts on 2023-01-01 and ends on 2023-01-10, the duration would be 10 days (inclusive).</p>
+    <p>Please ensure that the end date is not earlier than the start date for accurate results.</p>
+    <p>Disclaimer: This tool provides an estimate and should not be used as a substitute for professional legal advice.</p>
+    <br>
+
   `;
 
   window.calcCaseDuration = function () {
