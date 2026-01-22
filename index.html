@@ -22,6 +22,10 @@
   <meta name="twitter:description" content="Explore 100+ online calculators including financial, health, scientific, tax, and more.">
   <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#006ad1">
+  <link rel="service-worker" href="service-worker.js">
+
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2162324894765763"
      crossorigin="anonymous"></script> 
@@ -39,11 +43,20 @@
 <hr style="height: 4px; border: none; background: linear-gradient(to right, blue, yellow, green, red) ;">
 <hr style="border-top: 5px dotted orange;">
 <hr style="height: 4px; border: none; background: linear-gradient(to right, red, yellow, green);">
-<div class="container">
-  <aside class="sidebar" id="menu"></aside>
+
+<div class="container">  
+  <aside class="sidebar">
+  <input
+    type="text"
+    id="menuSearch"
+    placeholder="🔍 Search calculator (global)..."
+  />
+  <div id="menu"></div>
+</aside>
   <!-- NEW WRAPPER -->
   <div class="main-content">
   <div class="submenu" id="submenu"></div>
+  <div id="recent"></div>
   <div class="result-area" id="resultArea">
     <h2>Select any calculator</h2>
     <h2>from left side</h2>
@@ -92,6 +105,13 @@ export default function () { ... input + button + formula ... }
     <a href="disclaimer.html">Disclaimer</a>
   </div>
 </footer>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+</script>
+
 
 </body>
 </html>
