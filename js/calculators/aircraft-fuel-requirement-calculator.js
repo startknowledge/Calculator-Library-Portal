@@ -12,7 +12,19 @@ export default function () {
             <input type="number" id="reserveFuel" name="reserveFuel" step="0.01" required><br><br>
             <button type="button" onclick="calculateFuel()">Calculate Fuel Requirement</button>
         </form>
-        <div id="fuelResult"></div>
+        <div id="fuelResult"></div><br>
+        p><u>Explanation about Aircraft Fuel Requirement</u> :</p>
+        <p>The Aircraft Fuel Requirement Calculator is a tool designed to help pilots and aviation professionals estimate the amount of fuel needed for a flight. 
+        It takes into account several key factors including the distance to be traveled, the aircraft's fuel consumption rate, and the required reserve fuel percentage.</p>
+        <p>To use the calculator, users input the total distance of the flight in nautical miles, the fuel consumption rate of the aircraft in gallons per nautical mile, and the percentage of reserve fuel they wish to carry.
+        The calculator then computes the total fuel required for the flight, including both the fuel needed for the journey and the additional reserve fuel.</p>
+        <p>Understanding fuel requirements is crucial for flight planning and safety. Adequate fuel ensures that the aircraft can reach its destination while also having enough reserve to handle unexpected situations such as diversions or delays.
+        Pilots must comply with aviation regulations that mandate minimum fuel reserves to ensure safe operations.</p>
+        <p>Overall, the Aircraft Fuel Requirement Calculator serves as a valuable resource for aviation professionals, aiding in efficient flight planning and promoting safety in air travel.</p>
+        <p>For more detailed information, please refer to aviation resources or regulatory guidelines.</p>
+        <p>Disclaimer: The explanation provided here is for general informational purposes only and may not cover all aspects of aircraft fuel requirements. For specific details, please consult official aviation resources or regulatory bodies.</p>
+        <br>
+        
     `;
 
     // Function to calculate fuel requirement
