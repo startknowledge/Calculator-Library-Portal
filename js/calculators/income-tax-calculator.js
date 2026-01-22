@@ -9,6 +9,25 @@ export default function () {
 
     <button onclick="calcIncomeTax()">Calculate</button>
     <p id="taxResult"></p>
+    <br>
+    <p>The Income Tax Calculator helps you estimate your income tax liability based on the new tax regime slabs. By entering your annual income, users can quickly calculate the tax payable.</p>
+    <p>This calculator is useful for individuals who want to understand their tax obligations under the new income tax regime.</p>  
+    <p>Ensure that the income input is accurate to get a reliable tax estimate.</p>
+    <p>Explained below are the steps to use the calculator effectively.</p>
+    <p><b>How to Use:</b> Enter your annual income in the "Annual Income" field. Click the "Calculate" button to see the estimated tax payable displayed below.</p>
+    <p><b>Inputs:</b></p>
+    <ul>
+      <li><b>Annual Income (₹):</b> Your total annual income in Indian Rupees.</li>
+    </ul>
+    <p><b>Output:</b></p>
+    <ul>
+      <li><b>Tax Payable (₹):</b> The estimated tax payable based on your income.</li>
+    </ul>
+    <p><b>Note:</b> Ensure that the income input is accurate to get a reliable tax estimate.</p>
+    <p><b>Example:</b> For an annual income of ₹500,000, the tax payable would be ₹15,000.</p>
+    <p><b>Formula:</b> Tax Payable = Tax Slab Calculation Based on New Regime</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and actual tax liabilities may vary based on additional factors such as deductions, exemptions, and specific tax laws.</p>
+    <br>
   `;
 
   window.calcIncomeTax = function () {

@@ -15,6 +15,14 @@ export default function () {
 
     <button onclick="calcFreelance()">Calculate</button>
     <p id="freeResult"></p>
+    <br>
+    <p>The Freelance Earnings Calculator helps you estimate your monthly earnings based on your hourly rate, the number of hours you work per day, and the number of working days in a month. Simply enter your hourly rate in rupees, hours per day, and working days per month, then click "Calculate" to see your estimated monthly income.</p>  
+    <p>This calculator is useful for freelancers, contractors, and gig workers who want to quickly assess their potential earnings. It allows for easy adjustments to your rate and working schedule to see how changes impact your monthly income.</p>
+    <p><b>Note:</b> Ensure that the inputs are accurate to get a reliable estimate.</p>
+    <p><b>Example:</b> For an hourly rate of ₹500, working 6 hours a day for 22 days a month, the estimated monthly earnings would be ₹66,000.</p>
+    <p><b>Formula:</b> Monthly Earnings (₹) = Hourly Rate (₹) × Hours per Day × Working Days per Month</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and actual earnings may vary based on additional factors such as taxes, expenses, and fluctuations in work availability.</p>
+    <br>
   `;
 
   window.calcFreelance = function () {

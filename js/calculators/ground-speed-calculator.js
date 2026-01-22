@@ -11,6 +11,14 @@ export default function () {
         <button type="button" onclick="calculateGroundSpeed()">Calculate Ground Speed</button>
     </form>
     <div id="groundSpeedResult"></div>
+    <br>
+    <p>The Ground Speed Calculator helps pilots and aviation enthusiasts determine the actual speed of an aircraft over the ground by considering both the true airspeed and the wind speed. By inputting these values, users can calculate the ground speed in knots.</p>
+    <p>This calculator is particularly useful for flight planning, navigation, and performance analysis. Understanding ground speed is essential for accurate time estimates, fuel calculations, and overall flight efficiency.</p> 
+    <p><b>Note:</b> Ensure that the true airspeed and wind speed inputs are accurate to get a reliable ground speed.</p>
+    <p><b>Example:</b> For a true airspeed of 150 knots and a wind speed of 20 knots, the ground speed would be 170 knots.</p>
+    <p><b>Formula:</b> Ground Speed = True Airspeed + Wind Speed</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and actual ground speed may vary based on additional factors such as wind direction, aircraft weight, and atmospheric conditions.</p>
+    <br>
 `;
 
     // Function to calculate ground speed

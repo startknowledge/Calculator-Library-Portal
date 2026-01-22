@@ -14,9 +14,11 @@ export default function () {
     <p id="floorResult"></p>
     <br>
     <p>Flooring Cost Calculator helps you estimate the total cost of flooring based on the area to be covered and the cost per square foot. Simply enter the floor area in square feet and the cost per square foot, then click "Calculate" to see the total flooring cost.</p>
-    <p>For more information, visit <a href="https://en.wikipedia.org/wiki/Flooring" target="_blank">Wikipedia: Flooring</a>.</p>
-    <p>Calculator by <a href="https://www.calculators.tech" target="_blank">calculators.tech</a></p>
-    <p>&copy; 2024 calculators.tech</p>
+    <p>This tool is useful for homeowners, contractors, and interior designers who need to budget for flooring projects. It allows for quick calculations and helps in making informed decisions about flooring options.</p>
+    <p><b>Note:</b> Ensure that the area and cost inputs are accurate to get a reliable estimate.</p>
+    <p><b>Example:</b> For a room of 800 sq ft with a flooring cost of ₹120 per sq ft, the total cost would be ₹96,000.</p> 
+    <p><b>Formula:</b> Total Flooring Cost = Floor Area (sq ft) × Cost per sq ft (₹)</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and actual costs may vary based on additional factors such as labor, materials, and location.</p>
     <br>
   `;
 

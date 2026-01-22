@@ -34,7 +34,6 @@ export default function () {
   const casaResult = div.querySelector("#casaResult");
   <p>A higher CASA ratio is generally favorable for banks as it reduces the cost of funds and improves net interest margins. Banks often strive to increase their CASA ratio through various strategies, such as offering attractive interest rates on savings accounts and promoting current account services to businesses.</p>
   <p>In summary, the CASA ratio is a crucial indicator of a bank's financial health and efficiency in managing its deposit base.</p>
-  <p>For more financial calculators, visit our <a href="/calculators">Calculators Page</a>.</p>
   <p>Disclaimer: This calculator provides an estimate and should not be used for official financial decisions.</p>
   <br>
   `;

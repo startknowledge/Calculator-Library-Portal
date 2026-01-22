@@ -49,6 +49,29 @@ export default function () {
         text-align: center;
       }
     </style>
+    <br>
+    <p>The Inverter Load Calculator helps you determine the total electrical load of your appliances and recommends an appropriate inverter size based on that load. By entering the quantity and wattage of each appliance, users can quickly calculate the total load in watts and the recommended inverter capacity in volt-amperes (VA).</p>
+    <p>This calculator is useful for individuals and businesses looking to ensure they have an adequate inverter to support their electrical load during power outages.</p>
+    <p>Ensure that the appliance quantities and wattage inputs are accurate to get a reliable load and inverter size estimate.</p>
+    <p>Explained below are the steps to use the calculator effectively.</p>
+    <p><b>How to Use:</b> Enter the quantity and wattage for each appliance in the respective fields. Click the "Calculate Load" button to see the total load and recommended inverter size displayed below.</p>
+    <p><b>Inputs:</b></p>
+    <ul>
+      <li><b>Appliance:</b> The name of the appliance.</li>
+      <li><b>Quantity:</b> The number of units of the appliance.</li>
+      <li><b>Watt (per unit):</b> The power consumption in watts for one unit of the appliance.</li>
+    </ul>
+    <p><b>Output:</b></p>
+    <ul>
+      <li><b>Total Load (Watts):</b> The total electrical load in watts.</li>
+      <li><b>Recommended Inverter (VA):</b> The recommended inverter size in volt-amperes.</li>
+    </ul>
+    <p><b>Note:</b> Ensure that the appliance quantities and wattage inputs are accurate to get a reliable load and inverter size estimate.</p>
+    <p><b>Example:</b> For a total load of 1000 watts, the recommended inverter size would be 1250 VA.</p>
+    <p><b>Formula:</b> Total Load (Watts) = Sum of (Quantity × Watt per Unit)</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and actual inverter requirements may vary based on additional factors such as power factor, surge loads, and specific device characteristics.</p>
+    <br>
+
   `;
 
   window.calcInverterLoad = function () {

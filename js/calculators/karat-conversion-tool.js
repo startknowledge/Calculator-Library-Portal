@@ -45,6 +45,21 @@ export default function () {
       <li>585 → 14 Karat Gold (58.5% purity)</li>
       <li>999 → 24 Karat Gold (99.9% purity)</li>
     </ul>
+    <br>
+    <p><b>How to Use:</b> Select the gold karat from the dropdown and enter the 6-digit HUID number to verify the hallmark details.</p>
+    <p><b>Inputs:</b></p>
+    <ul>
+      <li><b>Gold Karat:</b> The karat value of the gold item.</li>
+      <li><b>HUID:</b> The 6-digit Hallmark Unique Identification Number.</li>
+    </ul>
+    <p><b>Outputs:</b></p>
+    <ul>
+      <li><b>Hallmark Details:</b> Verification of the gold karat, purity mark, and HUID.</li>
+    </ul>
+    <p><b>Example:</b> For a 24K gold item with HUID A1B2C3, the hallmark details would be verified as 24K (999) with HUID A1B2C3.</p>
+    <p><b>Formula:</b> Purity Mark = Karat Value (e.g., 24K = 999)</p>
+    <p><b>Disclaimer:</b> This calculator provides an estimate and final verification should be done using BIS CARE App.</p>
+    <br>
   `;
 
   window.checkPurity = function () {

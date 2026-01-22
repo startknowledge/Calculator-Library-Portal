@@ -12,6 +12,17 @@ export default function () {
             <button id="calculateBtn">Calculate Making Charges</button>
         </div>
         <div class="calculator-result" id="result"></div>
+        <br>
+        <p><b>How to Use the Gold Making Charges Calculator:</b></p>
+        <ol>
+            <li>Enter the weight of the gold in grams.</li>
+            <li>Enter the making charge rate per gram in rupees.</li>
+            <li>Click the "Calculate Making Charges" button to compute the total making charges.</li>
+        </ol>
+        <p><b>Example:</b> If the gold weight is 10 grams and the making charge rate is ₹50 per gram, the total making charges would be ₹500.</p>
+        <p><b>Formula:</b> Total Making Charges (₹) = Gold Weight (grams) × Making Charge Rate (₹/gram)</p>
+        <p><b>Disclaimer:</b> This calculator provides an estimate and actual making charges may vary based on additional factors such as design complexity, labor costs, and jeweler policies.</p> 
+        <br>
     `;
     window.calculateGoldMakingCharges = function() {
         const goldWeight = parseFloat(document.getElementById("goldWeight").value);
