@@ -12,6 +12,12 @@ export default function () {
 
     <button onclick="calcFloor()">Calculate</button>
     <p id="floorResult"></p>
+    <br>
+    <p>Flooring Cost Calculator helps you estimate the total cost of flooring based on the area to be covered and the cost per square foot. Simply enter the floor area in square feet and the cost per square foot, then click "Calculate" to see the total flooring cost.</p>
+    <p>For more information, visit <a href="https://en.wikipedia.org/wiki/Flooring" target="_blank">Wikipedia: Flooring</a>.</p>
+    <p>Calculator by <a href="https://www.calculators.tech" target="_blank">calculators.tech</a></p>
+    <p>&copy; 2024 calculators.tech</p>
+    <br>
   `;
 
   window.calcFloor = function () {

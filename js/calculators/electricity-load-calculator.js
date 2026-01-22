@@ -49,6 +49,18 @@ export default function () {
         text-align: center;
       }
     </style>
+    <br>
+    <p><u>Explanation about Inverter Load Calculator</u> :</p>
+    <p>The Inverter Load Calculator is a practical tool designed to help users estimate the total electrical load of their household appliances and recommend an appropriate inverter size. By inputting the quantity and wattage of various appliances, users can calculate the total wattage required to power their home during a power outage.</p>
+    <p>To use the calculator, simply enter the number of units and wattage for each appliance listed in the table. After clicking the "Calculate Load" button, the tool will compute and display the total load in watts as well as a recommended inverter size, which is typically 25% higher than the total load to ensure efficient performance.</p>
+    <p>This calculator is particularly useful for homeowners and businesses looking to invest in an inverter system. By understanding their total load requirements, users can make informed decisions about the size and capacity of the inverter needed to meet their energy needs during power interruptions.</p>
+    <p>In summary, the Inverter Load Calculator is a valuable resource for anyone considering an inverter purchase, providing clarity on load requirements and aiding in effective energy planning.</p> 
+    <p><b>Note:</b> This calculator provides an estimate of the inverter load based on the inputs provided and assumes standard operating conditions for the appliances listed.</p>
+    <p>For personalized advice and detailed inverter options, consider consulting with a professional electrician or inverter supplier.</p>
+    <p>Happy Calculating!</p> 
+    <p>-- The Calculators Team</p>
+    <p>Disclaimer: This calculator provides estimates based on the inputs provided and should be used for informational purposes only. Always consult with a professional for critical electrical decisions.</p>
+    <br>
   `;
 
   window.calcInverterLoad = function () {

@@ -16,6 +16,13 @@ export default function () {
 
     <button onclick="calcLTV()">Calculate</button>
     <p id="ltvResult"></p>
+    <br>
+    <p><u>Explanation about Customer Lifetime Value (LTV) Calculator</u> :</p>
+    <p>The Customer Lifetime Value (LTV) Calculator is a tool designed to help businesses estimate the total revenue they can expect from a customer over the entire duration of their relationship. By inputting the average purchase value, purchase frequency, and customer lifespan, users can calculate the LTV, which is a crucial metric for understanding customer profitability.</p>
+    <p>To use the calculator, simply enter the average purchase value in Indian Rupees (₹), the number of purchases made by the customer per year, and the expected lifespan of the customer in years. The calculator will then multiply these three values to provide the total Customer Lifetime Value.</p>
+    <p>This tool is particularly useful for marketers, sales strategists, and business owners who want to optimize their customer acquisition and retention strategies. Understanding LTV helps in making informed decisions about marketing budgets and customer relationship management.</p>
+    <p>Disclaimer: This tool is intended for informational purposes only and should not be used as a substitute for professional financial advice or detailed customer value analysis.</p>
+    <br>
   `;
 
   window.calcLTV = function () {

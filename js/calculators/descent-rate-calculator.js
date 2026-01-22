@@ -13,6 +13,12 @@ export default function () {
         <button type="button" onclick="calculateDescentRate()">Calculate Descent Rate</button>
     </form>
     <div id="descentRateResult"></div>
+    <br>
+    <p><u>Explanation about Descent Rate Calculator</u> :</p>
+    <p>The Descent Rate Calculator is a tool designed to help pilots and aviation enthusiasts estimate the descent rate of an aircraft based on key parameters such as thrust, weight, and atmospheric temperature. By inputting these values, users can gain insights into how these factors influence the rate at which an aircraft descends during flight.</p>
+    <p>To use the calculator, simply enter the thrust in pounds, the aircraft's weight in pounds, and the ambient temperature in degrees Fahrenheit. The calculator will then process these inputs to provide an estimated descent rate in feet per minute.</p>
+    <p>This tool is particularly useful for pilots during flight planning and for understanding the dynamics of aircraft performance under varying conditions. It aids in making informed decisions to ensure safe and efficient descents.</p>
+    <p>Disclaimer: This tool is intended for informational purposes only and should not be used as a substitute
 `;
 
     // Function to calculate descent rate

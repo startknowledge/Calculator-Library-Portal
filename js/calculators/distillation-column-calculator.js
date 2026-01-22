@@ -12,6 +12,13 @@ export default function () {
 
     <button onclick="calcDist()">Calculate</button>
     <p id="distResult"></p>
+    <br>
+    <p><u>Explanation about Distillation Column Calculator</u> :</p>
+    <p>The Distillation Column Calculator is a specialized tool designed to assist chemical engineers and process designers in estimating the number of theoretical plates required for a distillation column based on separation factor and relative volatility. This calculator is essential for optimizing the design and operation of distillation processes in various industries, including petrochemical, pharmaceutical, and food processing.</p>
+    <p>To use the calculator, simply input the desired separation factor and the relative volatility of the components being separated. The calculator will then apply the logarithmic relationship to compute the approximate number of theoretical plates needed to achieve the specified separation.</p>
+    <p>This tool is particularly useful during the preliminary design phase of distillation columns, allowing engineers to make informed decisions about column height, diameter, and operational parameters. By accurately estimating the number of plates, users can enhance process efficiency, reduce energy consumption, and improve product quality.</p>  
+    <p>Disclaimer: This tool is intended for informational purposes only and should not be used as a substitute for professional engineering judgment or detailed process simulation.</p>
+    <br>
   `;
 
   window.calcDist = function () {

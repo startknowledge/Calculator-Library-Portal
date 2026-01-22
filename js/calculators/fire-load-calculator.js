@@ -17,7 +17,31 @@ export default function () {
         <button type="button" onclick="calculateFireLoad()">Calculate Fire Load</button>
     </form>
     <div id="fireLoadResult"></div>
-`;
+    <br>
+    <hr>
+    <h4>References:</h4>
+    <ul>
+        <li>Fire Protection Handbook, 20th Edition, National Fire Protection Association (NFPA)</li>
+        <li>International Building Code (IBC) - Section 706</li>
+        <li>Underwriters Laboratories (UL) Fire Safety Standards</li>
+    </ul>
+</div>   
+<br>
+    <p><u>Explanation about Fire Load Calculator</u> :</p>
+    <p>The Fire Load Calculator is a tool designed to help individuals and businesses calculate the total fire load based on the type of material and its quantity. By inputting the material type and quantity in kilograms, users can quickly determine the total fire load in megajoules (MJ).</p>
+    <p>The calculator uses the following formulas:</p>
+    <p>Total Fire Load (MJ) = Fire Load per kg (MJ/kg) * Quantity (kg)</p>
+    <p>To use the calculator, simply select the material type and enter the quantity in kilograms in the provided input fields. After clicking the "Calculate" button, the tool will compute and display the total fire load in megajoules.</p>
+    <p>This calculator is particularly useful for fire safety engineers, building designers, and facility managers who need to assess fire hazards and plan appropriate fire protection measures. By knowing the total fire load, users can make informed decisions about fire suppression systems and safety protocols.</p>
+    <p>In summary, the Fire Load Calculator is a valuable resource for anyone involved in fire safety or building design, providing clarity on fire hazards to aid in effective risk management.</p>
+    <p><b>Note:</b> This calculator provides an estimate of the fire load based on the inputs provided. Actual fire loads may vary depending on material properties, combustion efficiency, and other factors.</p>
+    <p>For personalized advice and detailed fire load analysis, consider consulting with a fire safety expert or building designer.</p>
+    <p>Happy Calculating!</p>
+    <p>-- The Calculators Team</p>
+    <p>Disclaimer: This calculator provides estimates based on the inputs provided and should be used for informational purposes only. Always consult with a certified textile professional for critical purchasing decisions.</p>
+    <br>
+ `;
+
     // Function to calculate fire load
     function calculateFireLoad() {
         const materialType = document.getElementById("materialType").value;
