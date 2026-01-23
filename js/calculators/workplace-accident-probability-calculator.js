@@ -13,6 +13,20 @@ export default function () {
         <button type="button" onclick="calculateAccidentProbability()">Calculate Accident Probability</button>
     </form>
     <div id="workplaceAccidentProbResult"></div>
+    <br>
+    <h3>Workplace Accident Probability Calculator</h3>
+    <p>Based on inputs, this tool helps estimate the likelihood of accidents occurring in a workplace setting.</p>
+    <p>It is important for organizations to monitor and improve workplace safety to minimize risks.</p>
+    <p>Note: This calculator provides an estimate and should be used alongside professional safety assessments.</p>
+    <p>Estimate probability of accidents in a workplace.</p>
+    <p><b>Explanation:</b></p>
+    <p>This calculator helps assess workplace safety performance.</p>
+    <p><b>Formula:</b></p>
+    <p>Accident Probability = Accidents ÷ Employees</p>
+    <p><b>Example:</b>  
+    5 accidents ÷ 100 employees = <b>0.05</b>.</p>
+    <p><b>Disclaimer:</b> Past data may not guarantee future outcomes.</p>
+    <br>
 `;
     // Function to calculate workplace accident probability
     function calculateAccidentProbability() {

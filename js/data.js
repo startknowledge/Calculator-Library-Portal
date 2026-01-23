@@ -43,8 +43,5 @@ const calculatorData = {
   "Risk & Safety Calculators": ["Fire Load Calculator","Safety Factor Calculator","Risk Exposure Calculator","Workplace Accident Probability Calculator"],
   "Miscellaneous Calculators": ["Leap Year Checker","Numerology Calculator","Body Surface Area Calculator","Dosage Calculator"]
 
-
-
-
   // Add more categories here
 };

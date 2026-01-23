@@ -361,8 +361,7 @@
     { "name": "Traffic Load Calculator", "file": "js/calculators/traffic-load-calculator.js" },
     { "name": "Streetlight Energy Use Calculator", "file": "js/calculators/streetlight-energy-use-calculator.js" },
     { "name": "Urban Population Density Calculator", "file": "js/calculators/urban-population-density-calculator.js" }
-  ],
-  
+  ],  
   "Risk & Safety Calculators": [
     { "name": "Fire Load Calculator", "file": "js/calculators/fire-load-calculator.js" },
     { "name": "Safety Factor Calculator", "file": "js/calculators/safety-factor-calculator.js" },

@@ -13,6 +13,24 @@ export default function () {
         <button type="button" onclick="calculateSafetyFactor()">Calculate Safety Factor</button>
     </form>
     <div id="safetyFactorResult"></div>
+    <br>
+    <h4>References:</h4>
+    <ul>
+        <li>Mechanical Engineering Design, 10th Edition, J.E. Shigley</li>
+        <li>Roark's Formulas for Stress and Strain, 8th Edition, Warren C. Young</li>
+        <li>https://www.engineeringtoolbox.com/safety-factors-d_950.html</li>
+    </ul>
+    <p>Calculate the safety margin of a structure or system.</p>
+    <p><b>Explanation:</b></p>
+    <p>Safety factor shows how much stronger a system is than required.</p>
+    <p><b>Formula:</b></p>
+    <p>Safety Factor = Maximum Load ÷ Working Load</p>
+    <p>Based on material strength and applied load.</p>
+    <p>It indicates reliability and safety.</p>
+    <p><b>Example:</b>  
+    100 kN ÷ 50 kN = <b>2.0</b>.</p>
+    <p><b>Disclaimer:</b> Engineering judgment is required for final decisions.</p>
+    <br>
 `;
     // Function to calculate safety factor
     function calculateSafetyFactor() {

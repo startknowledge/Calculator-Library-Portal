@@ -36,8 +36,24 @@ export default function () {
     <p>In summary, the Fire Load Calculator is a valuable resource for anyone involved in fire safety or building design, providing clarity on fire hazards to aid in effective risk management.</p>
     <p><b>Note:</b> This calculator provides an estimate of the fire load based on the inputs provided. Actual fire loads may vary depending on material properties, combustion efficiency, and other factors.</p>
     <p>For personalized advice and detailed fire load analysis, consider consulting with a fire safety expert or building designer.</p>
-    <p>Happy Calculating!</p>
-    <p>-- The Calculators Team</p>
+    <p>Example Use Cases:</p>
+    <ul>
+        <li>A fire safety engineer assessing the fire load of a new building design.</li>
+        <li>A facility manager planning fire protection measures for a warehouse.</li>
+        <li>A building designer evaluating fire hazards for different construction materials.</li>
+    </ul>
+    <p>Formulas Used:</p>
+    <ul>
+        <li>Total Fire Load (MJ) = Fire Load per kg (MJ/kg) * Quantity (kg)</li>
+    </ul>
+    <p>Common Materials and Their Fire Load Values:</p>
+    <ul>
+        <li>Wood: 18 MJ/kg</li>
+        <li>Plastic: 30 MJ/kg</li>
+        <li>Metal: 5 MJ/kg (approximate)</li>
+    </ul>
+    <p>Based on the selected material type, the calculator uses predefined fire load values to compute the total fire load.</p>
+    
     <p>Disclaimer: This calculator provides estimates based on the inputs provided and should be used for informational purposes only. Always consult with a certified textile professional for critical purchasing decisions.</p>
     <br>
  `;
