@@ -20,17 +20,29 @@ export default function () {
 
   div.innerHTML = `
     <h3>Tailoring Measurement Converter</h3>
+    <p>Quickly view standard clothing measurements in inches and centimeters.</p>
 
     <label>Select Category</label>
     <select id="gender" onchange="loadSizes()">
       <option value="women">Women</option>
       <option value="men">Men</option>
-    </select>
+    </select><br><br>
 
     <label>Select Size</label>
-    <select id="size" onchange="showMeasurements()"></select>
+    <select id="size" onchange="showMeasurements()"></select><br><br>
 
     <div id="measureResult"></div>
+
+    <p><b>Explanation:</b><br>
+      This tool shows standard body measurements for selected sizes. Measurements are displayed in inches (") and converted to centimeters (cm) for convenience.
+    </p>
+
+    <p><b>Use Case:</b><br>
+      Useful for tailors, fashion designers, or shoppers wanting to know exact body measurements before tailoring or purchasing clothes.
+    </p>
+
+    <p><b>Disclaimer:</b><br>
+      These measurements are standard approximations and may vary by brand, manufacturer, or body type. Use as a reference only.<br></p>
   `;
 
   window.loadSizes = function () {
@@ -68,7 +80,3 @@ export default function () {
 
   return div;
 }
-
-
-
-

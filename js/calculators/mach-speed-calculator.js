@@ -1,37 +1,81 @@
 export default function () {
   const div = document.createElement("div");
-    div.innerHTML = `
+
+  div.innerHTML = `
     <h3>Mach Speed Calculator</h3>
-    <p>This calculator determines the Mach speed of an aircraft based on true airspeed and speed of sound.</p>
-    <form id="machSpeedCalcForm">
-        <label for="trueAirspeed">True Airspeed (knots):</label><br>
-        <input type="number" id="trueAirspeed" name="trueAirspeed" required><br><br>
-        <label for="speedOfSound">Speed of Sound (knots):</label><br>
-        <input type="number" id="speedOfSound" name="speedOfSound" required><br><br>
-        <button type="button" onclick="calculateMachSpeed()">Calculate Mach Speed</button>
-    </form>
+
+    <p>
+      This calculator determines the Mach number of an aircraft
+      based on its true airspeed and the local speed of sound.
+    </p>
+
+    <label>True Airspeed (knots)</label>
+    <input type="number" id="trueAirspeed" min="0" placeholder="e.g. 450">
+
+    <label>Speed of Sound (knots)</label>
+    <input type="number" id="speedOfSound" min="1" placeholder="e.g. 661">
+
+    <button onclick="calculateMachSpeed()">Calculate</button>
+
     <div id="machSpeedResult"></div>
-`;
+    <br>
 
-    // Function to calculate mach speed
-    function calculateMachSpeed() {
-        const trueAirspeed = parseFloat(document.getElementById("trueAirspeed").value);
-        const speedOfSound = parseFloat(document.getElementById("speedOfSound").value);
+    <p><b>Formula:</b></p>
+    <p>Mach Number = True Airspeed ÷ Speed of Sound</p>
 
-        if (isNaN(trueAirspeed) || isNaN(speedOfSound)) {
-            document.getElementById("machSpeedResult").innerHTML = "Please enter valid numbers.";
-            return;
-        }
+    <p><b>Example:</b></p>
+    <p>
+      True Airspeed = 450 knots<br>
+      Speed of Sound = 661 knots<br>
+      <b>Mach = 0.68</b>
+    </p>
 
-        // Simplified calculation for demonstration purposes
-        const machSpeed = trueAirspeed / speedOfSound;
+    <p><b>Mach Classification:</b></p>
+    <ul>
+      <li>Subsonic: Mach &lt; 1</li>
+      <li>Transonic: Mach 0.8 – 1.2</li>
+      <li>Supersonic: Mach &gt; 1</li>
+      <li>Hypersonic: Mach &gt; 5</li>
+    </ul>
 
-        document.getElementById("machSpeedResult").innerHTML = `
-            <h4>Results:</h4>
-            <p>Mach Speed: ${machSpeed.toFixed(2)}</p>
-        `;
+    <p><b>Use Case:</b></p>
+    <p>
+      Useful for aviation, aerospace engineering,
+      flight planning, and performance analysis.
+    </p>
+
+    <p><b>Disclaimer:</b>
+      Speed of sound varies with altitude and temperature.
+      This calculator provides an approximate result.
+    </p>
+  `;
+
+  window.calculateMachSpeed = function () {
+    const trueAirspeed = parseFloat(
+      document.getElementById("trueAirspeed").value
+    );
+    const speedOfSound = parseFloat(
+      document.getElementById("speedOfSound").value
+    );
+
+    if (
+      isNaN(trueAirspeed) ||
+      isNaN(speedOfSound) ||
+      trueAirspeed < 0 ||
+      speedOfSound <= 0
+    ) {
+      document.getElementById("machSpeedResult").innerHTML =
+        "<b>Please enter valid positive values.</b>";
+      return;
     }
-    // Attach the calculateMachSpeed function to the window object
-    window.calculateMachSpeed = calculateMachSpeed;
-    return div;
+
+    const machSpeed = trueAirspeed / speedOfSound;
+
+    document.getElementById("machSpeedResult").innerHTML = `
+      <h4>Result</h4>
+      <p><b>Mach Number:</b> ${machSpeed.toFixed(2)}</p>
+    `;
+  };
+
+  return div;
 }
