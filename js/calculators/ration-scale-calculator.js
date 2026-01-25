@@ -2,6 +2,8 @@ export default function () {
   const div = document.createElement("div");
 
   div.innerHTML = `
+    <h3>Military Ration Requirement Calculator</h3>
+
     <label>Number of Soldiers</label>
     <input type="number" id="soldierCount">
 
@@ -13,6 +15,32 @@ export default function () {
 
     <button onclick="calcRation()">Calculate</button>
     <p id="rationResult"></p>
+
+    <h4>Explanation:</h4>
+    <p>
+      This calculator estimates the total quantity of ration required
+      based on the number of soldiers, daily ration per soldier,
+      and the total duration in days.
+    </p>
+
+    <h4>Formula:</h4>
+    <p>
+      Total Ration (kg) = Soldiers × Ration per Day × Number of Days
+    </p>
+
+    <h4>Reference:</h4>
+    <p>
+      Official ration scale details can be checked here:<br>
+      <a href="https://bnrationscale.startknowledge.in" target="_blank" rel="noopener">
+        https://bnrationscale.startknowledge.in
+      </a>
+    </p>
+
+    <h4>Disclaimer:</h4>
+    <p>
+      This calculator provides an estimated value for planning purposes only.
+      Actual ration entitlement may vary based on official military guidelines.
+    </p>
   `;
 
   window.calcRation = function () {

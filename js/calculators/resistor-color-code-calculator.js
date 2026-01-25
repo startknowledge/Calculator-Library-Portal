@@ -2,7 +2,12 @@ export default function () {
   const div = document.createElement("div");
 
   div.innerHTML = `
-    <h3>Resistor Color Code Calculator (Up to 6 Band)</h3>
+    <h3>Resistor Color Code Calculator (Up to 6 Bands)</h3>
+
+    <p>
+      This calculator helps you determine the resistance, tolerance,
+      and temperature coefficient of resistors based on their color bands.
+    </p>
 
     <label>Band 1 (Digit)</label>
     <select id="b1">${digitOptions()}</select>
@@ -24,6 +29,38 @@ export default function () {
 
     <button onclick="calcResistor()">Calculate</button>
     <p id="resResult"></p>
+
+    <hr>
+
+    <h4>Formula</h4>
+    <p>
+      <b>Resistance (Ω)</b> = (Digit1 Digit2 [Digit3]) × Multiplier<br>
+      Tolerance and Temperature Coefficient are read directly from bands.
+    </p>
+
+    <h4>How to Use</h4>
+    <p>
+      1. Select the color of Band 1, Band 2, and Band 3 (optional).<br>
+      2. Select the multiplier color.<br>
+      3. Select tolerance and temperature coefficient colors.<br>
+      4. Click "Calculate" to get the resistance, tolerance, and temp coefficient.
+    </p>
+
+    <h4>Example</h4>
+    <p>
+      Band 1 = Red (2), Band 2 = Violet (7), Band 3 = Yellow (4), Multiplier = Orange (×1k), Tolerance = Gold (±5%)<br>
+      Resistance = 274 × 1,000 = 274,000 Ω = 274 kΩ ±5%
+    </p>
+
+    <h4>Note</h4>
+    <p>
+      3-band resistors omit the third digit. Tolerance and temperature coefficient are optional but important for precise circuits.
+    </p>
+
+    <h4>Disclaimer</h4>
+    <p>
+      Results are for reference only. Verify resistor values with a multimeter for critical applications.
+    </p>
   `;
 
   window.calcResistor = function () {
@@ -42,7 +79,7 @@ export default function () {
     document.getElementById("resResult").innerHTML = `
       <b>Resistance:</b> ${resistance.toLocaleString()} Ω<br>
       <b>Tolerance:</b> ${tolerance}<br>
-      <b>Temp Coefficient:</b> ${tempCoeff}
+      <b>Temperature Coefficient:</b> ${tempCoeff}
     `;
   };
 

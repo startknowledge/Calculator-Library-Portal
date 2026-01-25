@@ -1,37 +1,74 @@
 export default function () {
   const div = document.createElement("div");
-    div.innerHTML = `
+
+  div.innerHTML = `
     <h3>Rate of Climb Calculator</h3>
-    <p>This calculator determines the rate of climb of an aircraft based on vertical speed and time.</p>
-    <form id="rateOfClimbCalcForm">
-        <label for="verticalSpeed">Vertical Speed (feet per minute):</label><br>
-        <input type="number" id="verticalSpeed" name="verticalSpeed" required><br><br>
-        <label for="time">Time (minutes):</label><br>
-        <input type="number" id="time" name="time" required><br><br>
-        <button type="button" onclick="calculateRateOfClimb()">Calculate Rate of Climb</button>
-    </form>
-    <div id="rateOfClimbResult"></div>
-`;
+    <p>Calculate the rate at which an aircraft climbs based on altitude gained and time taken.</p>
 
-    // Function to calculate rate of climb
-    function calculateRateOfClimb() {
-        const verticalSpeed = parseFloat(document.getElementById("verticalSpeed").value);
-        const time = parseFloat(document.getElementById("time").value);
+    <label>Altitude Gained (feet)</label>
+    <input type="number" id="altitude" placeholder="Enter altitude gained">
 
-        if (isNaN(verticalSpeed) || isNaN(time)) {
-            document.getElementById("rateOfClimbResult").innerHTML = "Please enter valid numbers.";
-            return;
-        }
+    <label>Time Taken (minutes)</label>
+    <input type="number" id="time" placeholder="Enter time">
 
-        // Simplified calculation for demonstration purposes
-        const rateOfClimb = verticalSpeed / time;
+    <button onclick="calculateROC()">Calculate</button>
 
-        document.getElementById("rateOfClimbResult").innerHTML = `
-            <h4>Results:</h4>
-            <p>Rate of Climb: ${rateOfClimb.toFixed(2)} feet per minute</p>
-        `;
+    <p id="rocResult"></p>
+
+    <h4>Explanation:</h4>
+    <p>
+      Rate of Climb (ROC) indicates how fast an aircraft gains altitude.
+      It is a critical performance parameter used during takeoff,
+      climb, and obstacle clearance analysis.
+    </p>
+
+    <h4>Formula:</h4>
+    <p>
+      Rate of Climb (ft/min) = Altitude Gained (ft) ÷ Time (min)
+    </p>
+
+    <h4>How to Use:</h4>
+    <p>
+      1. Enter the total altitude gained in feet.<br>
+      2. Enter the time taken in minutes.<br>
+      3. Click on Calculate to get the rate of climb.
+    </p>
+
+    <h4>Relative Concepts:</h4>
+    <p>
+      Higher ROC indicates better climb performance.<br>
+      ROC depends on engine power, aircraft weight,
+      air density, and aerodynamic efficiency.
+    </p>
+
+    <h4>Note:</h4>
+    <p>
+      Rate of climb decreases with altitude due to reduced air density.
+      Pilots aim for the best rate of climb speed (Vy) for maximum altitude gain.
+    </p>
+
+    <h4>Disclaimer:</h4>
+    <p>
+      This calculator provides an approximate value for educational
+      and planning purposes only. Actual aircraft performance may vary.
+    </p>
+  `;
+
+  window.calculateROC = function () {
+    const altitude = parseFloat(document.getElementById("altitude").value);
+    const time = parseFloat(document.getElementById("time").value);
+
+    if (isNaN(altitude) || isNaN(time) || time <= 0) {
+      document.getElementById("rocResult").innerHTML =
+        "Please enter valid values.";
+      return;
     }
-    // Attach the calculateRateOfClimb function to the window object
-    window.calculateRateOfClimb = calculateRateOfClimb;
-    return div;
+
+    const roc = altitude / time;
+
+    document.getElementById("rocResult").innerHTML =
+      `<b>Rate of Climb:</b> ${roc.toFixed(2)} ft/min`;
+  };
+
+  return div;
 }

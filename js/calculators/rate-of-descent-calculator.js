@@ -1,37 +1,72 @@
 export default function () {
   const div = document.createElement("div");
-    div.innerHTML = `
+
+  div.innerHTML = `
     <h3>Rate of Descent Calculator</h3>
-    <p>This calculator determines the rate of descent of an aircraft based on vertical speed and time.</p>
-    <form id="rateOfDescentCalcForm">
-        <label for="verticalSpeed">Vertical Speed (feet per minute):</label><br>
-        <input type="number" id="verticalSpeed" name="verticalSpeed" required><br><br>
-        <label for="time">Time (minutes):</label><br>
-        <input type="number" id="time" name="time" required><br><br>
-        <button type="button" onclick="calculateRateOfDescent()">Calculate Rate of Descent</button>
-    </form>
-    <div id="rateOfDescentResult"></div>
-`;
+    <p>Calculate the rate at which an aircraft descends based on altitude lost and time taken.</p>
 
-    // Function to calculate rate of descent
-    function calculateRateOfDescent() {
-        const verticalSpeed = parseFloat(document.getElementById("verticalSpeed").value);
-        const time = parseFloat(document.getElementById("time").value);
+    <label>Altitude Lost (feet)</label>
+    <input type="number" id="altitude" placeholder="Enter altitude lost">
 
-        if (isNaN(verticalSpeed) || isNaN(time)) {
-            document.getElementById("rateOfDescentResult").innerHTML = "Please enter valid numbers.";
-            return;
-        }
+    <label>Time Taken (minutes)</label>
+    <input type="number" id="time" placeholder="Enter time">
 
-        // Simplified calculation for demonstration purposes
-        const rateOfDescent = verticalSpeed / time;
+    <button onclick="calculateROD()">Calculate</button>
 
-        document.getElementById("rateOfDescentResult").innerHTML = `
-            <h4>Results:</h4>
-            <p>Rate of Descent: ${rateOfDescent.toFixed(2)} feet per minute</p>
-        `;
+    <p id="rodResult"></p>
+
+    <h4>Explanation:</h4>
+    <p>
+      Rate of Descent (ROD) shows how fast an aircraft loses altitude.
+      It is used during approach, descent planning, and landing procedures.
+    </p>
+
+    <h4>Formula:</h4>
+    <p>
+      Rate of Descent (ft/min) = Altitude Lost (ft) ÷ Time (min)
+    </p>
+
+    <h4>How to Use:</h4>
+    <p>
+      1. Enter the total altitude lost in feet.<br>
+      2. Enter the time taken in minutes.<br>
+      3. Click Calculate to get the rate of descent.
+    </p>
+
+    <h4>Relative Concepts:</h4>
+    <p>
+      Higher descent rates are common during emergency or steep descents.<br>
+      Controlled descent rates are required for passenger comfort and safety.
+    </p>
+
+    <h4>Note:</h4>
+    <p>
+      Excessive rate of descent near landing can cause hard landings.
+      Pilots manage descent using power, pitch, and flap configuration.
+    </p>
+
+    <h4>Disclaimer:</h4>
+    <p>
+      This calculator provides an approximate value for educational
+      and planning purposes only. Actual aircraft performance may vary.
+    </p>
+  `;
+
+  window.calculateROD = function () {
+    const altitude = parseFloat(document.getElementById("altitude").value);
+    const time = parseFloat(document.getElementById("time").value);
+
+    if (isNaN(altitude) || isNaN(time) || time <= 0) {
+      document.getElementById("rodResult").innerHTML =
+        "Please enter valid values.";
+      return;
     }
-    // Attach the calculateRateOfDescent function to the window object
-    window.calculateRateOfDescent = calculateRateOfDescent;
-    return div;
+
+    const rod = altitude / time;
+
+    document.getElementById("rodResult").innerHTML =
+      `<b>Rate of Descent:</b> ${rod.toFixed(2)} ft/min`;
+  };
+
+  return div;
 }

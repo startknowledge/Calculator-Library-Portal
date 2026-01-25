@@ -67,6 +67,18 @@ export default function () {
     <button id="showBtn">Show Measurements</button>
 
     <div id="sizeResult" style="margin-top:10px;"></div>
+
+    <br><br>
+    <p><b>Explanation:</b> This calculator provides detailed body measurements for different sizes based on gender. Useful for tailoring or garment creation.</p>
+    <p><b>For example:</b> Select "Men" and size "44" to see all measurements like Chest, Waist, Shoulder, etc.</p>
+    <p><b>Formula / Reference:</b> Based on standard garment measurement charts.</p>
+    <p>Calculator is a tool to simplify finding correct sizes.</p>
+    <p>Relative measurements depend on correct gender and size selection.</p>
+    <p>Based on standard tailoring practices and sizing rules.</p>
+    <p>To use the calculator, select the gender and size from the dropdown and click "Show Measurements".</p>
+    <p><b>Note:</b> Always double-check measurements before cutting fabric or making garments.</p>
+    <p>It is important to use this as a guide and not an exact guarantee for fit.</p>
+    <p><b>Disclaimer:</b> Measurements are approximate. This calculator is for educational/reference purposes only. Tailoring results may vary.</p>
   `;
 
   // ===== DOM ELEMENTS =====
@@ -75,41 +87,28 @@ export default function () {
   const sizeResult = div.querySelector("#sizeResult");
   const showBtn = div.querySelector("#showBtn");
 
-  // ===== LOAD SIZE OPTIONS =====
+  // Load size options based on gender
   function loadSizes() {
-    size.innerHTML = "";
     const data = gender.value === "men" ? menSizes : womenSizes;
-
-    Object.keys(data).forEach(s => {
-      size.innerHTML += `<option value="${s}">${s}</option>`;
-    });
+    size.innerHTML = Object.keys(data).map(s => `<option value="${s}">${s}</option>`).join("");
   }
 
-  // ===== SHOW TABLE =====
+  // Display the measurement table
   function showSize() {
-    const data =
-      gender.value === "men"
-        ? menSizes[size.value]
-        : womenSizes[size.value];
-
-    let html = `
-      <table border="1" cellpadding="6" style="border-collapse:collapse">
-        <tr><th>Measurement</th><th>Inches</th></tr>
-    `;
-
+    const data = gender.value === "men" ? menSizes[size.value] : womenSizes[size.value];
+    let html = `<table border="1" cellpadding="6" style="border-collapse:collapse">
+                  <tr><th>Measurement</th><th>Inches</th></tr>`;
     for (let key in data) {
       html += `<tr><td>${key}</td><td>${data[key]}</td></tr>`;
     }
     html += "</table>";
-
     sizeResult.innerHTML = html;
   }
 
-  // ===== EVENTS =====
+  // Event listeners
   gender.addEventListener("change", loadSizes);
   showBtn.addEventListener("click", showSize);
 
   loadSizes(); // initial load
-
   return div;
 }
