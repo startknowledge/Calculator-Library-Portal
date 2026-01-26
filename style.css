@@ -303,6 +303,17 @@ H1{
 }
 .pin{margin-left:20px;cursor:pointer;}
 .pin:hover{transform:scale(2.2);}
+img {
+  margin: 0; 
+  max-width: 1120px;
+  max-height: 900px;
+  display: block;
+  margin: 0 auto;        /* 👈 centre */
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
